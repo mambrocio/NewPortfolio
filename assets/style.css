@@ -29,10 +29,11 @@ body{
 }
 
 /*---Header Styles---*/
-
+header{
+	display: flex;
+}
 
 .site-header{
-
 }
 
 /*---About---*/
