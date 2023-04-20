@@ -18,6 +18,8 @@ body{
 
 .container{
 	width: 75%;
+	display: flex;
+	align-items: center;
 	margin: 0 auto;	
 }
 
@@ -53,13 +55,24 @@ a:last-child{
 
 /*---Main---*/
 
+main{
+	text-align: center;
+}
+.main-video{
+max-width: 100%;
+}
 
+.hero-header{
+	position: absolute;
+	top: 30%;
+	z-index: 1;
+}
 
 /*---About---*/
 .opener-portfolio{
 	display: flex;
 	justify-content: space-between;
-	padding-top: 70vh;
+	padding-top: 20vh;
 }
 
 .opener-content{
