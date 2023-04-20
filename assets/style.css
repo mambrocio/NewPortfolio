@@ -55,11 +55,19 @@ a:last-child{
 
 
 
+.hero-header{
+	position: absolute;
+	top: 30%;
+	left: 12.6%;
+	justify-content: center;
+	z-index: 1;
+}
+
 /*---About---*/
 .opener-portfolio{
 	display: flex;
 	justify-content: space-between;
-	padding-top: 70vh;
+	padding-top: 20vh;
 }
 
 .opener-content{
