@@ -17,7 +17,7 @@ body{
 }
 
 .container{
-	width: 80%;
+	width: 75%;
 	margin: 0 auto;	
 }
 
@@ -31,16 +31,39 @@ body{
 /*---Header Styles---*/
 header{
 	display: flex;
+	justify-content: space-between;
+	padding-top: 2.5vh;
 }
 
-/*---
-
-.site-header{
+header ul{
+	padding-top: 1.1vh;
+	padding-left: 40vh;
 }
+
+
+li {
+	list-style-type: none;
+	display: inline;
+	padding-right: 50px;
+}
+
+a:last-child{
+	padding-right: 0;
+}
+
+/*---Main---*/
+
+
 
 /*---About---*/
 .opener-portfolio{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 70vh;
+}
 
+.opener-content{
+	padding-top: 0.95vh;
 }
 /*---Project Section---*/
 
@@ -64,4 +87,8 @@ header{
 }
 .contacts{
 
+}
+
+@media screen {
+	
 }
