@@ -1,9 +1,28 @@
+:root{
+	/*-Font Size Rules */
+	--extra-extra-large: 72px;
+	--extra-large: 56px;
+	--large: 48px;
+	--moderate: 40px;
+	--medium: 32px;
+	--small: 24px;
+	--tiny: 16px;
+
+	/*-Color Rules  */
+	--black: #181616;
+	--white: #fafafa;
+
+	/*-Content Body Padding*/
+	--top-pad: 10vh;
+	--bottom-pad: 16vh:
+}
+
 /*---CSS Desktop Prefix---*/
 
 
-@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;600&display=swap'); /* Header Font */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;1,300;1,400;1,600&display=swap'); /*Body Font */
 
 
 *{
@@ -14,6 +33,18 @@
 
 body{
 	font-family:'Montserrat',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin: 0;
+	font: 100%;
+	background-color: var(--white)
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Inter Tight',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: var(--black);
+}
+
+p{
+	font-size: var(--small)
 }
 
 .container{
@@ -29,62 +60,134 @@ body{
 	clear: both;
 }
 
+.o-line{
+	text-decoration: line-through;
+}
+
 /*---Header Styles---*/
 header{
 	display: flex;
 	justify-content: space-between;
 	padding-top: 2.5vh;
+	padding-bottom: 2.5vh;
 }
 
 header ul{
-	padding-top: 1.1vh;
+	padding-top: .5vh;
 	padding-left: 40vh;
 }
 
+header span{
+	font-size: 42px;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-family: 'Inter Tight',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: var(--black);
+}
 
-li {
+nav li {
 	list-style-type: none;
 	display: inline;
-	padding-right: 50px;
+	padding-left: 20px;
+	font-size: var(--small);
 }
 
-a:last-child{
+nav li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--black);
+}
+
+nav li a:first-child{
 	padding-right: 0;
 }
+
+nav li a:last-child{
+	justify-content: none;
+}
+
 
 /*---Main---*/
 
 main{
-	padding-top: 5vh;
-
-}
-
-.main-video{
-	max-width: 100%;				
-}
-
-
-
-.hero-header{
-	position: absolute;
+	padding-top: 40vh;
+	padding-bottom: 40vh;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
 
+video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0px;
+	width: 105%;
+
+}
+
+main h1{
+    z-index:1;
+	position: relative;
+	font-size: var(--extra-extra-large);
+	letter-spacing: 2px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-transform: uppercase;
+	color: #e14e00;
+
+}
+
+main .o-line{
+	color: rgba(255,254,65,255)
 }
 
 /*---About---*/
+
 .opener-portfolio{
-	display: flex;
-	padding-top: 20vh;
+	display: block;
+	padding-top: var(--top-pad);
+	padding-bottom: var(--top-pad);
+	justify-content: space-between;
+}
+.opener-header{
+	float: left;
+	text-transform: uppercase;
+	font-size: var(--large);
 }
 
 .opener-content{
-	padding-top: 0.95vh;
+	padding-top: 5.8vh;
+	float: right;
+	text-align: right;
+	width:60%;
+	font-size: var(--small)
 }
 /*---Project Section---*/
 
 .projects{
-
+	padding-bottom: var(--bottom-pad);
 }
+
+.projects-header{
+	font-size: var(--large);
+	text-transform: uppercase;
+}
+
+.project-picks{
+	display: flex;
+	float: right;
+}
+
+.project-box{
+	border: 1px solid red;
+	padding: 10px;
+	
+}
+
 .project-one{
 
 }
